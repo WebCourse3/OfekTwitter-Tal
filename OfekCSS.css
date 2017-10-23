@@ -1,0 +1,41 @@
+
+header, footer {
+	padding: 10px;
+	color: white;
+	background-color: blue;
+	clear: left;
+	text-align: left;
+
+}
+
+.botton {
+	color: white;
+	background-color: blue;
+	float: right;
+}
+
+
+#ofekIm {
+	padding: 5px;
+	clear: left;
+	text-align: left;
+	width:25px;
+	height:25px;
+}
+
+.sign-in {
+	margin: 150px;
+	margin-top: 20px;
+}
+#ofekTitle{
+	font-size: 25px;
+}
+.Filter{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.user{
+		margin-left: 50px;
+	margin-top: 70px;
+}
