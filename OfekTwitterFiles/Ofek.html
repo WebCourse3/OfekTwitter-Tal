@@ -5,38 +5,79 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="../CSS/OfekCSS.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 </head>
 <body>
-<div class="flex-container">
-	<header>
-		<img id="ofekIm" src="../Images/ofek.png">
 
-		<a href="../OfekTwitterFiles/Chat.html" id="ofekTitle" >OfekTwitter</a>
-		<a href="../OfekTwitterFiles/ofek.html"class="botton">Sign in</a>
-		<a href="../OfekTwitterFiles/SignUp.html" class="botton">Sign up</a>
-		<a href="../OfekTwitterFiles/UserFilter.html" class="botton">Users</a>
-	</header>
-	<form class="modal-content animate" action="/action_page.php">
-		<fieldset class="sign-in">
-			<legend>Sign-in:</legend>
-			<img src="../Images/useravatar.png">
-			<div class="container">
-				<label><b>Username</b></label>
-				<br>
-				<input type="text" placeholder="Enter Username" name="uname" required><br>
-				<br>
-				<label><b>Password</b></label> <br>
-				<input type="password" placeholder="Enter Password" name="psw" required><br>
-				<br>
-				<button type="submit">Login</button>
-				<br>
+
+<header>
+
+	<nav class="navbar navbar-fixed-top backgroud-color">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				        aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 
 			</div>
-			<div class="container" style="background-color:#f1f1f1">
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active ">
+						<a class="text-color" href="../OfekTwitterFiles/Chat.html">
+							<img src="../Images/ofek.png" class="image" alt="...">
+							OfekTwitter
+						</a></li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="../OfekTwitterFiles/UserFilter.html" class="text-color">Users</a></li>
+					<li><a href="../OfekTwitterFiles/ofek.html" class="text-color">Sign in</a></li>
+					<li><a href="../OfekTwitterFiles/SignUp.html" class="text-color">Sign up</a></li>
+
+				</ul>
 			</div>
-		</fieldset>
-	</form>
+		</div>
+	</nav>
+
+
+</header>
+<!--<div class="panel panel-primary">-->
+<!--<div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>-->
+<!--<div class="panel-body"> Panel content</div>-->
+<!--</div>-->
+<form class="modal-content animate" action="/action_page.php">
+	<div class="panel panel-primary col-md-3 col-md-offset-3">
+		<div class="panel-heading"><h3 class="panel-title">Sign in</h3></div>
+		<img src="../Images/useravatar.png">
+		<div class="container ">
+			<label><b>Username</b></label>
+			<br>
+			<input type="text" placeholder="Enter Username" name="uname" required><br>
+			<br>
+			<label><b>Password</b></label> <br>
+			<input type="password" placeholder="Enter Password" name="psw" required><br>
+			<br>
+			<button type="submit">Login</button>
+			<br>
+
+		</div>
+
+		<div class="panel-body"> Panel content</div>
+	</div>
+
+
+	<fieldset class="sign-in ">
+		<legend>Sign-in:</legend>
+
+		<div class="container" style="background-color:#f1f1f1">
+		</div>
+	</fieldset>
+</form>
 </div>
 </body>
 </html>
-/*new sakak*/
