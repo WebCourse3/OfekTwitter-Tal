@@ -1,5 +1,5 @@
 header, footer {
-	padding: 10px;
+	padding: 5px;
 	color: white;
 	background-color: blue;
 	clear: left;
@@ -14,12 +14,26 @@ header, footer {
 	margin-left: 10px;
 }
 #ofekIm {
-	padding: 5px;
-	clear: left;
-	text-align: left;
-	width:25px;
-	height:25px;
-}.Filter{
+
+	width: 25px;
+	height: 25px;
+
+
+}
+a{
+	text-decoration: none;
+	margin-top: 10px ;
+	margin-right: 10px;
+	font-size: 15px;
+}
+#ofekTitle {
+	font-size: 20px;
+	font-family: Arial,serif;
+	clear: right;
+	text-align: right;
+	color: white;
+}
+.Filter{
 	 margin-top: 40px;
 	 text-align: center;
  }
@@ -29,9 +43,7 @@ header, footer {
 	float: left;
 	text-align: center;
 }
-#ofekTitle{
-	 font-size: 25px;
- }
+
 .userRight{
 	margin-right: 25px;
 	margin-top: 70px;
@@ -39,4 +51,4 @@ header, footer {
 	margin-bottom: 25px;
 	float: right;
 	text-align: center;
-}
+}    /*new sakak*/
