@@ -35,15 +35,12 @@ a{
 }
 
 */
-.image{
-	height: 25px;
-}
-.backgroud-color{
-	background-color: #2b669a;
 
-}
-.text-color{
-	color: white;
-	font-family: Arial,serif;
-	font-size: medium;
+
+#avatar{
+	   margin-left: 5%;
+   }
+.panel {
+	margin-top: 10%;
+	padding: 0 !important;
 }

@@ -3,68 +3,98 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
 	<link rel="stylesheet" type="text/css" href="../CSS/UserFilter.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 </head>
 <body>
+
+<header>
+	<nav class="navbar backgroud-color">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				        aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="active ">
+						<a class="text-color" href="../OfekTwitterFiles/Chat.html">
+							<img src="../Images/ofek.png" class="image" alt="...">
+							OfekTwitter
+						</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="../OfekTwitterFiles/UserFilter.html" class="text-color">Users</a></li>
+					<li><a href="../OfekTwitterFiles/ofek.html" class="text-color">Sign in</a></li>
+					<li><a href="../OfekTwitterFiles/SignUp.html" class="text-color">Sign up</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>
+
 <div class="flex-container">
-	<header>
-		<img id="ofekIm" src="../Images/ofek.png">
-
-		<a href="../OfekTwitterFiles/Chat.html" id="ofekTitle" >OfekTwitter</a>
-		<a href="../OfekTwitterFiles/ofek.html"class="botton">Sign in</a>
-		<a href="../OfekTwitterFiles/SignUp.html" class="botton">Sign up</a>
-		<a href="../OfekTwitterFiles/UserFilter.html" class="botton">Users</a>
-
-	</header>
 	<div class="Filter">
 		<label><b>Filter by:</b></label>
 		<input type="text" placeholder="Username Name" name="uname">
 		<button type="OK">Filter</button>
-		<br>
+		<br><br>
 	</div>
-	<div class="container" style="background-color:#f1f1f1">
-	</div>
-
-				<div class="userLeft">
-					<img src="../Images/useravatar.png" alt="Avatar"><br>
+	<div class="users-left col-xs-8 col-xs-offset-1">
+		<div class="row">
+			<div class="panel panel-default user-container col-xs-2">
+				<div class="panel-body ">
+					<img src="../Images/useravatar.png" alt="Avatar"><br><br>
 					<button type="follow">follow</button>
 					<br>
-					<label><b>bar refrli </b></label>
+					<span><b>bar refrli </b></span>
 				</div>
-
-				<div class="userLeft">
-					<img src="../Images/useravatar.png" alt="Avatar"><br>
+			</div>
+			<div class="panel panel-default user-container col-xs-2">
+				<div class="panel-body ">
+					<img src="../Images/useravatar.png" alt="Avatar"><br><br>
 					<button type="follow">follow</button>
 					<br>
-					<label><b>mark ki </b></label>
+					<span><b>bar refrli </b></span>
 				</div>
+			</div>
 
+		</div>
 
-				<div class="userLeft">
-					<img src="../Images/useravatar.png" alt="Avatar"><br>
-					<button type="follow">follow</button>
-					<br>
-					<label><b>james bond </b></label>
-				</div>
-	<div class="userRight">
-		<img src="../Images/useravatar.png" alt="Avatar"><br>
-		<button type="follow">follow</button>
-		<br>
-		<label><b>james bond </b></label>
-	</div><br>
-	<div class="userRight">
-		<img src="../Images/useravatar.png" alt="Avatar"><br>
-		<button type="follow">follow</button>
-		<br>
-		<label><b>james bond </b></label>
 	</div>
 
-	<div class="container" style="background-color:#f1f1f1">
-	</div>
+	<div class="users-right col-xs-2">
+		<div class="panel panel-default">
 
-</div>
+			<h3 class="panel-title">followers</h3>
+
+
+			<div class="panel-body-left thumbnail user-container">
+				<img src="../Images/useravatar.png" alt="Avatar"><br><br>
+				<button type="follow">follow</button>
+				<br>
+				<span><b>bar refrli </b></span>
+			</div>
+
+
+			<div class="panel-body thumbnail user-container ">
+				<img src="../Images/useravatar.png" alt="Avatar"><br><br>
+				<button type="follow">follow</button>
+				<br>
+				<span><b>bar refrli </b></span>
+			</div>
+
+
+		</div>
+
+	</div>
+	</div>
 </body>
 </html>
-/*new sakak*/

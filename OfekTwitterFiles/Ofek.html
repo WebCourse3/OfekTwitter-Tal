@@ -5,6 +5,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="../CSS/OfekCSS.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+
 	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 </head>
 <body>
@@ -12,7 +14,7 @@
 
 <header>
 
-	<nav class="navbar navbar-fixed-top backgroud-color">
+	<nav class="navbar backgroud-color">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -46,15 +48,16 @@
 
 
 </header>
-<!--<div class="panel panel-primary">-->
-<!--<div class="panel-heading"><h3 class="panel-title">Panel title</h3></div>-->
-<!--<div class="panel-body"> Panel content</div>-->
-<!--</div>-->
+
 <form class="modal-content animate" action="/action_page.php">
-	<div class="panel panel-primary col-md-3 col-md-offset-3">
+	<div class="row">
+	<div class="panel panel-primary col-xs-3 col-xs-offset-4">
 		<div class="panel-heading"><h3 class="panel-title">Sign in</h3></div>
-		<img src="../Images/useravatar.png">
-		<div class="container ">
+		<br>
+		<div class="container col-xs-offset-2" >
+			<img id="avatar" src="../Images/useravatar.png">
+			<br><br>
+			<div class="ditails ">
 			<label><b>Username</b></label>
 			<br>
 			<input type="text" placeholder="Enter Username" name="uname" required><br>
@@ -62,21 +65,19 @@
 			<label><b>Password</b></label> <br>
 			<input type="password" placeholder="Enter Password" name="psw" required><br>
 			<br>
-			<button type="submit">Login</button>
+			<button type="submit" id="login-botton">Login</button>
 			<br>
+
+
+			</div>
 
 		</div>
 
-		<div class="panel-body"> Panel content</div>
+		<div class="panel-body"> </div>
+	</div>
 	</div>
 
 
-	<fieldset class="sign-in ">
-		<legend>Sign-in:</legend>
-
-		<div class="container" style="background-color:#f1f1f1">
-		</div>
-	</fieldset>
 </form>
 </div>
 </body>

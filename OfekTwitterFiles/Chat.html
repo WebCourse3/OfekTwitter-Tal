@@ -4,33 +4,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Ofek</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/Chat.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css" >
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 </head>
 <body>
 
-<div class="SignUp">
-	<header>
-		<img id="ofekIm" src="../Images/ofek.png">
-		<a href="../OfekTwitterFiles/Chat.html" id="ofekTitle" >OfekTwitter</a>
-		<a href="../OfekTwitterFiles/ofek.html"class="botton">Sign in</a>
-		<a href="../OfekTwitterFiles/SignUp.html" class="botton">Sign up</a>
-		<a href="../OfekTwitterFiles/UserFilter.html" class="botton">Users</a>
-	</header>
+<nav class="navbar backgroud-color">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+			        aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+		</div>
+		<div id="navbar" class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li class="active ">
+					<a class="text-color" href="../OfekTwitterFiles/Chat.html">
+						<img src="../Images/ofek.png" class="image" alt="...">
+						OfekTwitter
+					</a></li>
+
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+
+				<li><a href="../OfekTwitterFiles/UserFilter.html" class="text-color">Users</a></li>
+				<li><a href="../OfekTwitterFiles/ofek.html" class="text-color">Sign in</a></li>
+				<li><a href="../OfekTwitterFiles/SignUp.html" class="text-color">Sign up</a></li>
+
+			</ul>
+		</div>
+	</div>
+</nav>
+<header>
+
+
+</header>
+
+<br>
+<div class="col-xs-offset-3 col-xs-6" >
+	<div class="row">
+		<input id="chatBox" type="text" placeholder="tweet here" name="uname" required>
+		<button type="submit" id="submit" class="right">publish</button>
+
+	</div>
+	<div class="row">
+		<div class="userChat">
+			<img id="user" src="../Images/useravatar.png">
+			<span id="james">james</span>
+		</div>
+	</div><br>
+	<div class="row">
+		<div class="userChat">
+			<img id="user" src="../Images/useravatar.png">
+			<ul>
+				<span id="james">james</span><br>
+				<span id="james">james</span>
+			</ul>
+		</div>
+	</div>
 </div>
 
-
-<br >
-<div >
-	<input id="chatBox" type="text" placeholder="tweet here" name="uname" required>
-
-<button type="submit">publish</button>
-</div>
-<div class="userChat">
-	<img id="user" src="../Images/useravatar.png">
-	<span id="james">james</span>
-
-</div>
 </body>
 
 </html>
-/*new sakak*/

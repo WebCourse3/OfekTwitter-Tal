@@ -1,4 +1,12 @@
-header, footer {
+
+
+.panel {
+	margin-top: 10%;
+	padding: 0 !important;
+}
+
+
+/*header, footer {
 	padding:5px;
 	color: white;
 	background-color: blue;
