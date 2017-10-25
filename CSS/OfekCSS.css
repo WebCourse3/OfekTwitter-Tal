@@ -1,6 +1,6 @@
-
+/*
 header, footer {
-	padding: 10px;
+	padding: 1%;
 	color: white;
 	background-color: blue;
 	clear: left;
@@ -12,24 +12,35 @@ header, footer {
 	color: white;
 	background-color: blue;
 	float: right;
-	margin-left: 10px;
+	margin-left: 3%;
 }
 
-#ofekIm {
-	padding: 5px;
-	clear: left;
-	text-align: left;
-	width: 25px;
-	height: 25px;
+a{
+	text-decoration: none;
 }
+#ofekTitle {
+	font-size:100%;
+	font-family: Arial,serif;
+	clear: right;
+	text-align: right;
+	color: white;
+}  #ofekIm.navbar {
+	width: 4%;
+	height:  4%;
 
+}
 .sign-in {
 	margin: 150px;
 	margin-top: 20px;
 }
 
-#ofekTitle {
-	font-size: 25px;
+*/
+
+
+#avatar{
+	   margin-left: 5%;
+   }
+.panel {
+	margin-top: 10%;
+	padding: 0 !important;
 }
-
-
