@@ -22,6 +22,10 @@ margin: 0;
 }
 .users-right{
 	text-align: center;
+	border-color: grey;
+}
+#panelSmallRight{
+	padding-bottom: 5px;
 }
 /*header, footer {*/
 	/*padding: 5px;*/

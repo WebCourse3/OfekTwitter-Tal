@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Ofek</title>
-	<link rel="stylesheet" type="text/css" href="../CSS/Chat.css">
-	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
-	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ofek</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Chat.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
 </head>
 <body>
 
 <nav class="navbar backgroud-color">
-	<div class="container">
-		<div id="navbar" class="navbar-collapse collapse">
-			<ul class="nav navbar-nav">
-				<li class="navLeft">
-					<a class="text-color" href="../OfekTwitterFiles/Chat.html">
-						<img src="../Images/ofek.png" class="image" alt="...">
-						OfekTwitter
-					</a></li>
+    <div class="container">
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="navLeft">
+                    <a class="text-color" href="../OfekTwitterFiles/Chat.html">
+                        <img src="../Images/ofek.png" class="image" alt="...">
+                        OfekTwitter
+                    </a></li>
 
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
 
-				<li><a href="../OfekTwitterFiles/UserFilter.html" class="text-color">Users</a></li>
-				<li><a href="../OfekTwitterFiles/ofek.html" class="text-color">Sign in</a></li>
-				<li><a href="../OfekTwitterFiles/SignUp.html" class="text-color">Sign up</a></li>
+                <li><a href="../OfekTwitterFiles/UserFilter.html" class="text-color">Users</a></li>
+                <li><a href="../OfekTwitterFiles/ofek.html" class="text-color">Sign in</a></li>
+                <li><a href="../OfekTwitterFiles/SignUp.html" class="text-color">Sign up</a></li>
 
-			</ul>
-		</div>
-	</div>
+            </ul>
+        </div>
+    </div>
 </nav>
 
 <div id="tweets" class=" col-xs-offset-3 col-xs-6">
-	<div class="row">
-		<input id="chatBox" type="text" placeholder="tweet here" name="uname">
-		<button type="submit" id="submit" class="right" onclick="addTweetChatBox()">publish</button>
-	</div>
-	<!--<div class="row userChat">-->
-		<!--<img class="user" src="../Images/useravatar.png">-->
-		<!--<span class="name"> james</span><br>-->
-		<!--<span class="comment">james</span>-->
-	<!--</div>-->
-	<!--<div class="row userChat">-->
-		<!--<img id="user" src="../Images/useravatar.png">-->
-		<!--<span class="name"><b> james</b></span><br>-->
-		<!--<span class="comment">james</span>-->
-	<!--</div>-->
+    <div class="row">
+        <input id="chatBox" type="text" placeholder="tweet here" name="uname">
+        <button type="submit" id="submit" class="right" onclick="addTweetChatBox()">publish</button>
+    </div>
 </div>
 
 <script type="text/javascript" src="../JS/Chat.js"></script>
