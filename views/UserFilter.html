@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../CSS/UserFilter.css">
+	<link rel="stylesheet" type="text/css" href="../CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+</head>
+<body>
+
+<header>
+	<nav class="navbar backgroud-color">
+		<div class="container">
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="navLeft">
+						<a class="text-color" href="../views/Chat.html">
+							<img src="../Images/ofek.png" class="image" alt="...">
+							OfekTwitter
+						</a></li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="../views/UserFilter.html" class="text-color">Users</a></li>
+					<li><a href="../views/ofek.html" class="text-color">Sign in</a></li>
+					<li><a href="../views/SignUp.html" class="text-color">Sign up</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+</header>
+
+<div class="Filter col-xs-offset-1">
+	<label><b>Filter by:</b></label>
+	<input type="text" placeholder="Username Name" id="filter" onkeyup="filterUsers();">
+	<button type="text">Filter</button>
+	<br><br>
+</div>
+<div class="row ">
+	<div id="users" class="col-xs-8 col-xs-offset-1">
+
+		<div class="row" id="row-right">
+
+		</div>
+	</div>
+	<div class="col-xs-2 followees panel panel-info ">
+		<div id="foloweesPics" class="row">
+			<h4>Followees</h4>
+		</div>
+	</div>
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+<script type="text/javascript" src="../JS/UserFilter.js"></script>
+</body>
+</html>

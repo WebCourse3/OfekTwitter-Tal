@@ -41,6 +41,26 @@ image.className='img-thumbnail';
 
 }
 
+function filterUsers() {
+	var filterBox = document.getElementById('filter');
+	var users = document.getElementById('users').children;
+	var text = filterBox.value;
+	var textLower = text.toLowerCase();
+	var countChild = users.length;
+	display(users, countChild, textLower);
+}
+
+function display(users, countChild, textLower) {
+	var userName1;
+	for (var i = 1; i < countChild; i++) {
+		userName1 = users[i].children;
+		var us = userName1[2].textContent;
+		us = us.toLowerCase();
+		if (us.includes(textLower))
+			users[i].style.display = '';
+		else users[i].style.display = 'none';
+	}
+}
 function chooseFollow(botton) {
     var txt = botton.innerHTML;
     if (txt === 'follow') {
