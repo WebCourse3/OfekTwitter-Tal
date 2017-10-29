@@ -19,3 +19,13 @@
 #login-botton{
 	margin-left: 5%;
 }
+.test{
+	border-radius: 10px;
+	border-width: 10px;
+}
+.test-succeed{
+	background-color: green;
+}
+.test-failed{
+	background-color: red;
+}

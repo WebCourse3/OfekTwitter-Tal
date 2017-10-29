@@ -1,3 +1,4 @@
+(function () {
 var userList = [
     {id: 1, username: 'Bobo', text: 'hello followers!', status: 'follow'},
     {id: 2, username: 'Elvis', text: 'this exercise is really easy!', status: 'follow'},
@@ -116,6 +117,8 @@ function setButton(botton) {
         botton.innerHTML = 'follow';
     }
 }
+}());
+
 
 //     var panelBig = document.createElement('div');
 //     panelBig.className = 'panel panel-default col-xs-2';
