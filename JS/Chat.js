@@ -26,8 +26,9 @@
 	document.getElementById('submit').addEventListener('click', addTweetChatBox);
 
 	function addTweetChatBox() {
-		var tweet = document.getElementById('chatBox').value;
-		document.getElementById('chatBox').value = '';
+		var tweet = $('#chatBox');
+		tweet=tweet.value;
+			document.getElementById('chatBox').value = '';
 		var name = 'james jackson';
 		addTweet(name, tweet);
 	}
@@ -39,4 +40,5 @@
 	for (var i = 0; i < tweetList.length; i++) {
 		addTweet(tweetList[i].username, tweetList[i].text);
 	}
+
 })();
