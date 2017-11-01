@@ -1,0 +1,31 @@
+.image{
+	height: 25px;
+}
+.text-color{
+	color: white;
+	font-family: Arial,serif;
+	font-size: medium;
+}
+
+.backgroud-color{
+	background-color: #2b669a;
+}
+
+.modal-content{
+	position: relative;
+	border: white !important;
+}
+
+#login-botton{
+	margin-left: 5%;
+}
+.test{
+	border-radius: 10px;
+	border-width: 10px;
+}
+.test-succeed{
+	background-color: green;
+}
+.test-failed{
+	background-color: red;
+}
