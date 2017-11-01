@@ -13,10 +13,26 @@ var ofekQuery = function (typeDiv) {
 			case '.' : {
 				typeDiv = typeDiv.substring(1, typeDiv.length);
 				this.elements = document.getElementsByClassName(typeDiv);
-
 			}
 			default:
-				this.elements = document.getElementsByClassName(typeDiv);
+				if (typeDiv.indexOf('.') > -1) {
+					var arrayTypes = typeDiv.split(' ');
+					var arrayTag = document.getElementsByTagName(arrayTypes[0]);
+					this.elements = getbyname(arrayTag, arrayTypes[1], 0);
+				}
+				else {
+					if (typeDiv.indexOf(' ') > -1) {
+						var arrayTypes = typeDiv.split(' ');
+						var arrayTag = document.getElementsByTagName(arrayTypes[0]);
+						for (var i = 1; i < arrayTypes.length; i++) {
+							arrayTag = getbyname(arrayTag, arrayTypes[i].toUpperCase(), 1);
+						}
+						this.elements = arrayTag;
+					}
+
+					else
+						this.elements = document.getElementsByClassName(typeDiv);
+				}
 			// if (typeDiv.includes('.')==true) {
 			// 	var index = typeDiv.indexOf('.');
 			// 	var tag = typeDiv.substr(0, index);
@@ -32,6 +48,35 @@ var ofekQuery = function (typeDiv) {
 			// 	var OfekQuery = document.getElementsByTagName(typeDiv);
 			// }
 
+		}
+
+		function getbyname(parents, children_name, index) {
+
+			for (var i = 0; i < parents.length; i++) {
+				var c = parents[i].children;
+				if (index === 1)
+					return gettagname(c, children_name);
+				else
+					return getclassname(c, children_name);
+
+			}
+		}
+
+		function getclassname(c, children_name) {
+			var x = [];
+			for (var j = 0; j < c.length; j++) {
+				x = x.push(c[j].getElementsByClassName(children_name));
+			}
+			return x;
+		}
+
+		function gettagname(c, children_name) {
+			var x = [];
+			for (var j = 0; j < c.length; j++) {
+				if (c[j].tagName === children_name)
+					x.push(c[j]);
+			}
+			return x;
 		}
 
 		this.map = function (fn) {
@@ -81,9 +126,9 @@ var ofekQuery = function (typeDiv) {
 		this.css = function (property, value) {
 
 		};
-		this.count=function () {
+		this.count = function () {
 			return this.elements.children.length;
-		}
+		};
 
 // var name = "gdfgdfgd";
 // this.name = "Adasdasd";

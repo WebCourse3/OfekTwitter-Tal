@@ -9,12 +9,12 @@
 		for (var i = 0; i < userList.length; i++) {
 			var avatar = createAvatar(userList[i]);
 		}
-		var all = $('.avatar');
-		var allarray = all.map(function (element) {
-			return element.classList.add('border');
-		});
+		var all = $('DIV img');
+		// var allarray = all.map(function (element) {
+		// 	return element.classList.add('border');
+		// });
 
-		console.log(allarray);
+		console.log(all);
 	}());
 
 	function createAvatar(user) {
